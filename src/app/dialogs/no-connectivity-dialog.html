@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Sin Conectividad</h2>
+<mat-dialog-content>
+  <p>
+    <mat-icon>wifi_off</mat-icon>
+    No se ha detectado conexión a Internet.
+  </p>
+  <p>
+    Para avanzar a la siguiente página, necesitas estar conectado mediante:
+  </p>
+  <ul>
+    <li>Cable de red (Ethernet)</li>
+    <li>Red de datos móvil</li>
+    <li>WiFi</li>
+  </ul>
+  <p>
+    Por favor, verifica tu conexión e intenta nuevamente.
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onClose()">Entendido</button>
+</mat-dialog-actions>

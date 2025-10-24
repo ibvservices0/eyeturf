@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+  height: 100%; 
+  overflow-x: hidden; /* Previene scroll horizontal en móviles */
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mejoras para móviles */
+* {
+  box-sizing: border-box;
+}
+
+/* Evitar zoom en inputs en iOS */
+input, select, textarea {
+  font-size: 16px;
+}
+
+/* Optimización de toques en móviles */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+}

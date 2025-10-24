@@ -1,0 +1,78 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  max-height: 40px;
+  object-fit: contain;
+}
+
+mat-toolbar button {
+  color: blue !important;
+  font-size: 1.4em;
+}
+
+.invisible-button {
+  visibility: hidden !important;
+}
+
+/* Responsive Design para móviles */
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+    min-height: calc(100vh - 56px);
+  }
+
+  mat-toolbar {
+    height: 56px;
+  }
+
+  mat-toolbar button {
+    font-size: 1.2em;
+    padding: 8px 12px;
+  }
+
+  .logo {
+    height: 32px;
+    max-height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 5px;
+  }
+
+  mat-toolbar button {
+    font-size: 1em;
+    padding: 6px 10px;
+  }
+
+  .logo {
+    height: 28px;
+    max-height: 28px;
+  }
+}
